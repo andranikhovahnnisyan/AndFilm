@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndFilm | Main</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="andfilm_logo.png" type="image/x-icon">
+</head>
+<body>
+ <div class="boss">
+  <header class="header">
+   <div class="header_logo_div">
+    <a href="#" draggable="false">
+     <img class="header_logo" src="andfilm_logo.png" alt="logo" draggable="false">
+    </a>
+   </div>
+   <div class="header_search_div">
+    <div class="header_search_full">
+    <div class="header_search_logo_div">
+     <svg width="22px" height="22px" viewBox="0 0 24 24">
+      <path fill="#fff" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
+     </svg>
+    </div>
+     <input id="header_search" type="search" placeholder="Search" spellcheck="false">
+    </div>
+   </div>
+   <nav class="header_nav">
+    <div class="header_nav-ul-div">
+     <ul class="header_nav-ul">
+      <li>
+       <a class="nav-links" href="#">Films</a>
+      </li>
+      <li>
+       <a class="nav-links" href="#">Series</a>
+      </li>
+      <li>
+       <a class="nav-links" href="#">Cartoons</a>
+      </li>
+      <li>
+       <a class="nav-links" href="#">New</a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <div class="header_actions">
+   <div id="header_actions-dark-light-div" class="header_actions-theme-div">
+   <div id="theme-sun-btn" class="header_actions-theme-sun">
+    <svg  width="25px" height="25px" viewBox="0 0 24 24">
+     <path fill="#fff" d="M12 1.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0V2a.75.75 0 0 1 .75-.75m0 5a5.75 5.75 0 1 0 0 11.5a5.75 5.75 0 0 0 0-11.5M5.46 4.399a.75.75 0 0 0-1.061 1.06l.707.707a.75.75 0 1 0 1.06-1.06zM22.75 12a.75.75 0 0 1-.75.75h-1a.75.75 0 0 1 0-1.5h1a.75.75 0 0 1 .75.75m-3.149-6.54a.75.75 0 1 0-1.06-1.061l-.707.707a.75.75 0 1 0 1.06 1.06zM12 20.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75m6.894-2.416a.75.75 0 1 0-1.06 1.06l.707.707a.75.75 0 1 0 1.06-1.06zM3.75 12a.75.75 0 0 1-.75.75H2a.75.75 0 0 1 0-1.5h1a.75.75 0 0 1 .75.75m2.416 6.894a.75.75 0 0 0-1.06-1.06l-.707.707a.75.75 0 0 0 1.06 1.06z" />
+    </svg>
+   </div>
+    <div id="theme-moon-btn" class="header_actions-theme-moon">
+     <svg width="25px" height="25px" viewBox="0 0 24 24">
+      <path fill="#000" d="M12.2 22c4.53 0 8.45-2.91 9.76-7.24a1.002 1.002 0 0 0-1.25-1.25c-.78.23-1.58.35-2.38.35c-4.52 0-8.2-3.68-8.2-8.2c0-.8.12-1.6.35-2.38c.11-.35.01-.74-.25-1s-.64-.36-1-.25A10.17 10.17 0 0 0 2 11.8C2 17.42 6.57 22 12.2 22M8.18 4.65c-.03.34-.05.68-.05 1.02c0 5.62 4.57 10.2 10.2 10.2c.34 0 .68-.02 1.02-.05C17.93 18.38 15.23 20 12.2 20C7.68 20 4 16.32 4 11.8a8.15 8.15 0 0 1 4.18-7.15" />
+     </svg>
+    </div> 
+   </div>
+    <div id="header_actions-notif-div" class="header_actions-div" title="Notifications">
+     <svg width="25px" height="25px" viewBox="0 0 24 24">
+      <path class="svg" fill-rule="evenodd" d="M12 1.25A7.75 7.75 0 0 0 4.25 9v.704a3.53 3.53 0 0 1-.593 1.958L2.51 13.385c-1.334 2-.316 4.718 2.003 5.35q1.133.309 2.284.523l.002.005C7.567 21.315 9.622 22.75 12 22.75s4.433-1.435 5.202-3.487l.002-.005a29 29 0 0 0 2.284-.523c2.319-.632 3.337-3.35 2.003-5.35l-1.148-1.723a3.53 3.53 0 0 1-.593-1.958V9A7.75 7.75 0 0 0 12 1.25m3.376 18.287a28.5 28.5 0 0 1-6.753 0c.711 1.021 1.948 1.713 3.377 1.713s2.665-.692 3.376-1.713M5.75 9a6.25 6.25 0 1 1 12.5 0v.704c0 .993.294 1.964.845 2.79l1.148 1.723a2.02 2.02 0 0 1-1.15 3.071a26.96 26.96 0 0 1-14.187 0a2.02 2.02 0 0 1-1.15-3.07l1.15-1.724a5.03 5.03 0 0 0 .844-2.79z" clip-rule="evenodd" />
+     </svg>
+    </div>
+     <div id="header_actions-acc-div" class="header_actions-div" title="Accoount">
+     <svg width="25px" height="25px" viewBox="0 0 24 24">
+      <path class="svg" d="M10 4a4 4 0 0 0-4 4a4 4 0 0 0 4 4a4 4 0 0 0 4-4a4 4 0 0 0-4-4m7 8a.26.26 0 0 0-.26.21l-.19 1.32c-.3.13-.59.29-.85.47l-1.24-.5c-.11 0-.24 0-.31.13l-1 1.73c-.06.11-.04.24.06.32l1.06.82a4.2 4.2 0 0 0 0 1l-1.06.82a.26.26 0 0 0-.06.32l1 1.73c.06.13.19.13.31.13l1.24-.5c.26.18.54.35.85.47l.19 1.32c.02.12.12.21.26.21h2c.11 0 .22-.09.24-.21l.19-1.32c.3-.13.57-.29.84-.47l1.23.5c.13 0 .26 0 .33-.13l1-1.73a.26.26 0 0 0-.06-.32l-1.07-.82c.02-.17.04-.33.04-.5s-.01-.33-.04-.5l1.06-.82a.26.26 0 0 0 .06-.32l-1-1.73c-.06-.13-.19-.13-.32-.13l-1.23.5c-.27-.18-.54-.35-.85-.47l-.19-1.32A.236.236 0 0 0 19 12zm-7 2c-4.42 0-8 1.79-8 4v2h9.68a7 7 0 0 1-.68-3a7 7 0 0 1 .64-2.91c-.53-.06-1.08-.09-1.64-.09m8 1.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5c-.84 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5" />
+     </svg>
+    </div>
+    <div class="header_actions-lang-div">
+     <div class="header_actions-lang-en">
+      <svg width="25px" height="25px" viewBox="0 0 36 36">
+       <path fill="#00247d" d="M0 9.059V13h5.628zM4.664 31H13v-5.837zM23 25.164V31h8.335zM0 23v3.941L5.63 23zM31.337 5H23v5.837zM36 26.942V23h-5.631zM36 13V9.059L30.371 13zM13 5H4.664L13 10.837z" />
+       <path fill="#cf1b2b" d="m25.14 23l9.712 6.801a4 4 0 0 0 .99-1.749L28.627 23zM13 23h-2.141l-9.711 6.8c.521.53 1.189.909 1.938 1.085L13 23.943zm10-10h2.141l9.711-6.8a4 4 0 0 0-1.937-1.085L23 12.057zm-12.141 0L1.148 6.2a4 4 0 0 0-.991 1.749L7.372 13z" />
+       <path fill="#eee" d="M36 21H21v10h2v-5.836L31.335 31H32a4 4 0 0 0 2.852-1.199L25.14 23h3.487l7.215 5.052c.093-.337.158-.686.158-1.052v-.058L30.369 23H36zM0 21v2h5.63L0 26.941V27c0 1.091.439 2.078 1.148 2.8l9.711-6.8H13v.943l-9.914 6.941c.294.07.598.116.914.116h.664L13 25.163V31h2V21zM36 9a3.98 3.98 0 0 0-1.148-2.8L25.141 13H23v-.943l9.915-6.942A4 4 0 0 0 32 5h-.663L23 10.837V5h-2v10h15v-2h-5.629L36 9.059zM13 5v5.837L4.664 5H4a4 4 0 0 0-2.852 1.2l9.711 6.8H7.372L.157 7.949A4 4 0 0 0 0 9v.059L5.628 13H0v2h15V5z" />
+       <path fill="#cf1b2b" d="M21 15V5h-6v10H0v6h15v10h6V21h15v-6z" />
+     </svg>
+    </div>
+    <div class="header_actions-lang-ru">
+     <svg width="25px" height="25px" viewBox="0 0 36 36">
+      <path fill="#ce2028" d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-4h36z" />
+      <path fill="#22408c" d="M0 13h36v10H0z" />
+      <path fill="#eee" d="M32 5H4a4 4 0 0 0-4 4v4h36V9a4 4 0 0 0-4-4" />
+     </svg>
+    </div>
+    <div class="header_actions-lang-hy">
+     <svg width="25px" height="25px" viewBox="0 0 36 36">
+      <path fill="#d90012" d="M32 5H4a4 4 0 0 0-4 4v4h36V9a4 4 0 0 0-4-4" />
+      <path fill="#f2a800" d="M4 31h28a4 4 0 0 0 4-4v-4H0v4a4 4 0 0 0 4 4" />
+      <path fill="#0033a0" d="M0 13h36v10H0z" />
+     </svg>
+    </div>
+   </div>
+   </div>
+  </header>
+  <main id="main">
+   <div class="card_rows">
+    <a class="card_a" href="#" draggable="false">
+     <div class="card" title="Home Alone 1">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/zXtxtBDf/images-(30).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Home Alone 1</p>
+      <p class="card_title">1990</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card" title="Home Alone 2">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/kMVNJcqh/images-(31).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Home Alone 2</p>
+      <p class="card_title">1992</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card" title="Home Alone 3">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/Hskg8VPW/images-(32).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Home Alone 3</p>
+      <p class="card_title">1997</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card" title="Home Alone 4">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/rwGN6wMt/images-(33).jpgx" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Home Alone 4</p>
+      <p class="card_title">2002</p>
+     </div>
+    </a>
+   </div>
+      <div class="card_rows">
+    <a class="card_a" href="#" draggable="false">
+     <div class="card" title="Spider Man 1">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/13jcfcZR/images-(38).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title"> Spider Man 1</p>
+      <p class="card_title">2002</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card" title="Spider Man 2">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/ncsLnv0n/images-(39).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Spider Man 2</p>
+      <p class="card_title">2007</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card" title="Spider Man 3">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/zX0Xwxvf/nerbernel-(15).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Spider Man 3</p>
+      <p class="card_title">1997</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/wT611JrQ/images-(40).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Caribbean Pirates 1 1</p>
+      <p class="card_title">2003</p>
+     </div>
+    </a>
+   </div>
+      <div class="card_rows">
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/C1sf24t0/images-(41).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Caribbean Pirates 2</p>
+      <p class="card_title">2006</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/QdZhBrVD/images-(42).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Caribbean Pirates 3</p>
+      <p class="card_title">2007</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/tJyRKQPV/images-(44).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Caribbean Pirates 4</p>
+      <p class="card_title">2011</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/GpWvst06/images-(45).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Caribbean Pirates 5</p>
+      <p class="card_title">2017</p>
+     </div>
+    </a>
+   </div>
+  <div class="card_rows">
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/XYTMLGCs/images-(46).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Men in Black 1</p>
+      <p class="card_title">1997</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/9fppMsC4/images-(47).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Men in Black 2</p>
+      <p class="card_title">2002</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/bJ51ShM8/images-(48).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Men in Black 3</p>
+      <p class="card_title">2012</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/Dz4cQ5VM/images-(49).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Harry Potter and the Sorcerer's Stone</p>
+      <p class="card_title">2001</p>
+     </div>
+    </a>
+   </div>
+      <div class="card_rows">
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/sD279K7X/images-(50).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Harry Potter and the Chamber of Secrets</p>
+      <p class="card_title">2002</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/fLKSY0bK/images-(51).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Harry Potter and the Prisoner of Azkaban</p>
+      <p class="card_title">2004</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/RVqJnhxK/images-(52).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Harry Potter and the Goblet of Fire</p>
+      <p class="card_title">2005</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/GtttY7V1/images-(53).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Harry Potter and the Order of the Phoenix</p>
+      <p class="card_title">2007</p>
+     </div>
+    </a>
+   </div>
+      <div class="card_rows">
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/KY58Whh6/images-(54).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Harry Potter and the Half-Blood Prince </p>
+      <p class="card_title">2009</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/mgfZ2gLT/images-(55).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Harry Potter and the Deathly Hallows: Part 1</p>
+      <p class="card_title">20010</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/Jn2Mw1Yr/images-(56).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Harry Potter and the Deathly Hallows: Part 2</p>
+      <p class="card_title">2011</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/brhFrxfS/images-(58).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Fast & Furious 9</p>
+      <p class="card_title">2021</p>
+     </div>
+    </a>
+   </div>
+      <div class="card_rows">
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/KYtW2qCg/images-(59).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Taxi 1</p>
+      <p class="card_title">1998</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/SQgvkzth/images-(60).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Taxi 2</p>
+      <p class="card_title">2000</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/zB00z97Q/images-(61).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Taxi 3</p>
+      <p class="card_title">2003</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/25Yw4zXQ/nerbernel-(16).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Taxi 4</p>
+      <p class="card_title">2007</p>
+     </div>
+    </a>
+   </div>
+      <div class="card_rows">
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/WbJ6CDB7/images-(62).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Taxi 5</p>
+      <p class="card_title">2018</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/sg8QmZkJ/images-(85).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Mummy 1</p>
+      <p class="card_title">1999</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/VNWw6xWt/images-(86).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Mummy 2</p>
+      <p class="card_title">2001</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/3xK5qSHS/images-(87).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Mummy 3</p>
+      <p class="card_title">2008</p>
+     </div>
+    </a>
+   </div>
+   <div class="card_rows">
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/JnfTdMLm/Picsart-26-01-13-10-23-16-308.jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Jumanji: Welcome to the Jungle</p>
+      <p class="card_title">2017</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/tJ1jFXzJ/Picsart-26-01-13-10-28-01-524.jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Jumanji: The Next Level</p>
+      <p class="card_title">2019</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/02tdKjgk/1746103754-karate-txan.jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">The Karate Kid</p>
+      <p class="card_title">2010</p>
+     </div>
+    </a>
+    <a class="card_a" href="#" draggable="false">
+     <div class="card">
+      <div class="card_image_div">
+       <img class="card_image" src="https://i.postimg.cc/9Ff2L5zR/images-(68).jpg" alt="poster" draggable="false">
+      </div>
+      <p class="card_title">Ace Ventura: When Nature Calls</p>
+      <p class="card_title">1995</p>
+     </div>
+    </a>
+   </div>
+</main>
+<footer class="footer"></footer>
+ </div>
+
+
+
+ <script src="script.js"></script>
+</body>
+</html>
