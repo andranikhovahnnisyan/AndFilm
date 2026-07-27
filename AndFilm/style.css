@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asset&family=Astloch:wght@400;700&family=Autour+One&family=Bitcount+Single:wght@100..900&family=Black+Ops+One&family=Cinzel:wght@400..900&family=Gravitas+One&family=Henny+Penny&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jim+Nightshade&family=Matemasie&family=Montenegrin+Gothic+One&family=Noto+Sans+Armenian:wght@100..900&family=Orbitron:wght@400..900&family=Playwrite+ID:wght@100..400&family=Rock+3D&family=Rubik+Distressed&family=Rubik+Iso&family=Rubik:ital,wght@0,300..900;1,300..900&family=Rye&family=Space+Grotesk:wght@300..700&family=Yuyu+Short&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asset&family=Astloch:wght@400;700&family=Audiowide&family=Autour+One&family=Bitcount+Single:wght@100..900&family=Black+Ops+One&family=Cinzel:wght@400..900&family=Gravitas+One&family=Henny+Penny&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jim+Nightshade&family=Matemasie&family=Montenegrin+Gothic+One&family=Noto+Sans+Armenian:wght@100..900&family=Orbitron:wght@400..900&family=Playwrite+ID:wght@100..400&family=Rock+3D&family=Rubik+Distressed&family=Rubik+Iso&family=Rubik:ital,wght@0,300..900;1,300..900&family=Rye&family=Space+Grotesk:wght@300..700&family=Yuyu+Short&display=swap');
 
 * {
 margin: 0;
@@ -107,7 +107,7 @@ color: var(--white);
 } 
 
 .header_nav {
-width: 280px;
+width: 380px;
 height: 70%;
 display: flex;
 justify-content: center;
@@ -305,6 +305,19 @@ height: 400px;
 display: flex;
 align-items: center;
 justify-content: space-around;
+position: relative;
+}
+
+.row_title {
+color: var(--white);
+user-select: none;
+position: absolute;
+top: 0;
+left: 20px;
+font-family: "Rye", serif;
+font-weight: 500;
+font-style: normal;
+font-size: 1.1rem;
 }
 
 .card_a {
@@ -351,10 +364,57 @@ font-style: normal;
 text-align: center;
 }
 
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\
+    CURSORS
+\\\\\\\\\\\\\\\\\\\\\ */
+
+
+.squid-game {
+cursor: url("./cursors/squid-game.png"), pointer;
+}
+
+.wednesday {
+cursor: url("./cursors/wednesday.png"), pointer;
+}
+
+.stranger-things {
+cursor: url("./cursors/stranger-things.png"), pointer;
+}
+
+.alice-in-borderland {
+cursor: url("./cursors/alice-in-borderland.png"), pointer;
+}
+
+.harry-potter {
+cursor: url("./cursors/harry-potter.png"), pointer;
+}
+
+.taxi {
+cursor: url("./cursors/taxi.png"), pointer;
+}
+
+.mummy {
+cursor: url("./cursors/mummy.png"), pointer;
+}
+
+.men-in-black {
+cursor: url("./cursors/men-in-black.png"), pointer;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\
+    CURSORS
+\\\\\\\\\\\\\\\\\\\\\ */
+
+
 .footer {
 width: 100%;
-height: 300px;
+height: 400px;
 background-color: var(--header_footer-color);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
 position: relative;
 display: flex;
 align-items: center;
@@ -440,6 +500,62 @@ transition: 0.3s;
 
 .ftr-sponsors-svg:hover {
 fill: var(--ftr-svg-hover);
+}
+
+.ftr-last-name {
+width: 500px;
+height: 80px;
+border: 1px solid var(--white);
+color: var(--white);
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+bottom: 40px;
+font-size: 5rem;
+font-family: "Audiowide", sans-serif;
+font-weight: 400;
+font-style: normal;
+user-select: none;
+letter-spacing: 10px;
+cursor: url("./cursors/film-pointer.png"), pointer;
+z-index: 2;
+transition: 0.3s;
+}
+
+.ftr-last-name:hover {
+transform: scale(1.05);
+}
+
+.ftr-last-name:hover::before {
+opacity: 1;
+}
+
+.ftr-last-name::before {
+content: "";
+width: calc(100% + 8px);
+height: calc(100% + 8px);
+background: linear-gradient(45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00C8, #FF0000);
+background-size: 600%;
+animation: ftr-bef 25s linear infinite;
+border-radius: inherit;
+position: absolute;
+z-index: -1;
+opacity: 0;
+transition: 1s;
+}
+
+@keyframes ftr-bef {
+0% {
+background-position: 0 0;
+}
+50% {
+background-position: 400% 0;
+}
+100% {
+background-position: 0 0;
+}   
 }
 
 .copyright {
