@@ -5,6 +5,10 @@ Welcome to **AndFilm**, a modern, fast, and highly interactive online cinema and
 
 ---
 
+
+![AndFilm Preview Banner](https://i.postimg.cc/cLWggZhL/andfilm.png)
+
+
 ## ✨ Features & Core Logic
 
 - **Custom Theme Engine:** A fully dynamic Dark/Light theme controller engineered in pure JavaScript using CSS Custom Properties (`:root`) and dynamic properties change. 🌗
