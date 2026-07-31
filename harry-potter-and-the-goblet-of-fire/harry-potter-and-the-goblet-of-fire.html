@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndFilm | Harry Potter and the Goblet of Fire</title>
+    <link rel="stylesheet" href="harry-potter-and-the-goblet-of-fire.css">
+    <link rel="shortcut icon" href="../andfilm_logo.png" type="image/x-icon">
+</head>
+<body>
+ <div class="boss">
+   <div id="menu-for-mobile-display">
+   <div id="mobile-back-arrow">
+    <svg width="30px" height="30px" viewBox="0 0 24 24">
+     <path fill="currentColor" d="m4 10l-.707.707L2.586 10l.707-.707zm17 8a1 1 0 1 1-2 0zM8.293 15.707l-5-5l1.414-1.414l5 5zm-5-6.414l5-5l1.414 1.414l-5 5zM4 9h10v2H4zm17 7v2h-2v-2zm-7-7a7 7 0 0 1 7 7h-2a5 5 0 0 0-5-5z" />
+    </svg>
+   </div>
+    <nav class="mobile_nav">
+    <div class="mobile_nav-ul-div">
+     <ul class="mobile_nav-ul">
+      <li class="mobile-nav-li">
+       <a class="mobile-links" href="../main.html">Films</a>
+      </li>
+      <li class="mobile-nav-li">
+       <a class="mobile-links" href="../main.html">Series</a>
+      </li>
+      <li class="mobile-nav-li">
+       <a class="mobile-links" href="../main.html">Cartoons</a>
+      </li>
+      <li class="mobile-nav-li">
+       <a class="mobile-links" href="#">New</a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+    <div class="mobile_actions">
+   <div id="mobile_actions-dark-light-div" class="mobile_actions-theme-div">
+   <div id="mobile-theme-sun-btn" class="mobile_actions-theme-sun">
+    <svg  width="25px" height="25px" viewBox="0 0 24 24">
+     <path fill="#fff" d="M12 1.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0V2a.75.75 0 0 1 .75-.75m0 5a5.75 5.75 0 1 0 0 11.5a5.75 5.75 0 0 0 0-11.5M5.46 4.399a.75.75 0 0 0-1.061 1.06l.707.707a.75.75 0 1 0 1.06-1.06zM22.75 12a.75.75 0 0 1-.75.75h-1a.75.75 0 0 1 0-1.5h1a.75.75 0 0 1 .75.75m-3.149-6.54a.75.75 0 1 0-1.06-1.061l-.707.707a.75.75 0 1 0 1.06 1.06zM12 20.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75m6.894-2.416a.75.75 0 1 0-1.06 1.06l.707.707a.75.75 0 1 0 1.06-1.06zM3.75 12a.75.75 0 0 1-.75.75H2a.75.75 0 0 1 0-1.5h1a.75.75 0 0 1 .75.75m2.416 6.894a.75.75 0 0 0-1.06-1.06l-.707.707a.75.75 0 0 0 1.06 1.06z" />
+    </svg>
+   </div>
+    <div id="mobile-theme-moon-btn" class="mobile_actions-theme-moon">
+     <svg width="25px" height="25px" viewBox="0 0 24 24">
+      <path fill="#000" d="M12.2 22c4.53 0 8.45-2.91 9.76-7.24a1.002 1.002 0 0 0-1.25-1.25c-.78.23-1.58.35-2.38.35c-4.52 0-8.2-3.68-8.2-8.2c0-.8.12-1.6.35-2.38c.11-.35.01-.74-.25-1s-.64-.36-1-.25A10.17 10.17 0 0 0 2 11.8C2 17.42 6.57 22 12.2 22M8.18 4.65c-.03.34-.05.68-.05 1.02c0 5.62 4.57 10.2 10.2 10.2c.34 0 .68-.02 1.02-.05C17.93 18.38 15.23 20 12.2 20C7.68 20 4 16.32 4 11.8a8.15 8.15 0 0 1 4.18-7.15" />
+     </svg>
+    </div> 
+   </div>
+    <div id="mobile_actions-notif-div" class="mobile_actions-div" title="Notifications">
+     <svg width="25px" height="25px" viewBox="0 0 24 24">
+      <path class="svg" fill-rule="evenodd" d="M12 1.25A7.75 7.75 0 0 0 4.25 9v.704a3.53 3.53 0 0 1-.593 1.958L2.51 13.385c-1.334 2-.316 4.718 2.003 5.35q1.133.309 2.284.523l.002.005C7.567 21.315 9.622 22.75 12 22.75s4.433-1.435 5.202-3.487l.002-.005a29 29 0 0 0 2.284-.523c2.319-.632 3.337-3.35 2.003-5.35l-1.148-1.723a3.53 3.53 0 0 1-.593-1.958V9A7.75 7.75 0 0 0 12 1.25m3.376 18.287a28.5 28.5 0 0 1-6.753 0c.711 1.021 1.948 1.713 3.377 1.713s2.665-.692 3.376-1.713M5.75 9a6.25 6.25 0 1 1 12.5 0v.704c0 .993.294 1.964.845 2.79l1.148 1.723a2.02 2.02 0 0 1-1.15 3.071a26.96 26.96 0 0 1-14.187 0a2.02 2.02 0 0 1-1.15-3.07l1.15-1.724a5.03 5.03 0 0 0 .844-2.79z" clip-rule="evenodd" />
+     </svg>
+    </div>
+   </div>
+  </div>
+  <header id="top" class="header">
+   <div id="menu-for-mobile">
+    <svg class="mobile-menu-svg" width="30px" height="30px" viewBox="0 0 24 24">
+     <rect width="18" height="1.5" x="3" y="7.001" fill="currentColor" rx=".75" />
+     <rect width="15" height="1.5" x="3" y="11.251" fill="currentColor" rx=".75" />
+     <rect width="18" height="1.5" x="3" y="15.499" fill="currentColor" rx=".75" />
+    </svg>
+   </div>
+   <div class="header_logo_div">
+    <a href="../main.html" draggable="false">
+     <img class="header_logo" src="../andfilm_logo.png" alt="logo" draggable="false">
+    </a>
+   </div>
+   <div class="header_search_div">
+    <div class="header_search_full">
+     <label for="header_search">
+       <div class="header_search_logo_div">
+        <svg width="22px" height="22px" viewBox="0 0 24 24">
+         <path fill="CurrentColor" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
+        </svg>
+      </div>
+     </label>
+     <input id="header_search" type="search" placeholder="Search" spellcheck="false">
+    </div>
+   </div>
+   <nav class="header_nav">
+    <div class="header_nav-ul-div">
+     <ul class="header_nav-ul">
+      <li>
+       <a class="nav-links" href="../main.html">Films</a>
+      </li>
+      <li>
+       <a class="nav-links" href="../main.html">Series</a>
+      </li>
+      <li>
+       <a class="nav-links" href="../main.html">Cartoons</a>
+      </li>
+      <li>
+       <a class="nav-links" href="#">New</a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <div class="header_actions">
+   <div id="header_actions-dark-light-div" class="header_actions-theme-div">
+   <div id="theme-sun-btn" class="header_actions-theme-sun">
+    <svg  width="25px" height="25px" viewBox="0 0 24 24">
+     <path fill="#fff" d="M12 1.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0V2a.75.75 0 0 1 .75-.75m0 5a5.75 5.75 0 1 0 0 11.5a5.75 5.75 0 0 0 0-11.5M5.46 4.399a.75.75 0 0 0-1.061 1.06l.707.707a.75.75 0 1 0 1.06-1.06zM22.75 12a.75.75 0 0 1-.75.75h-1a.75.75 0 0 1 0-1.5h1a.75.75 0 0 1 .75.75m-3.149-6.54a.75.75 0 1 0-1.06-1.061l-.707.707a.75.75 0 1 0 1.06 1.06zM12 20.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75m6.894-2.416a.75.75 0 1 0-1.06 1.06l.707.707a.75.75 0 1 0 1.06-1.06zM3.75 12a.75.75 0 0 1-.75.75H2a.75.75 0 0 1 0-1.5h1a.75.75 0 0 1 .75.75m2.416 6.894a.75.75 0 0 0-1.06-1.06l-.707.707a.75.75 0 0 0 1.06 1.06z" />
+    </svg>
+   </div>
+    <div id="theme-moon-btn" class="header_actions-theme-moon">
+     <svg width="25px" height="25px" viewBox="0 0 24 24">
+      <path fill="#000" d="M12.2 22c4.53 0 8.45-2.91 9.76-7.24a1.002 1.002 0 0 0-1.25-1.25c-.78.23-1.58.35-2.38.35c-4.52 0-8.2-3.68-8.2-8.2c0-.8.12-1.6.35-2.38c.11-.35.01-.74-.25-1s-.64-.36-1-.25A10.17 10.17 0 0 0 2 11.8C2 17.42 6.57 22 12.2 22M8.18 4.65c-.03.34-.05.68-.05 1.02c0 5.62 4.57 10.2 10.2 10.2c.34 0 .68-.02 1.02-.05C17.93 18.38 15.23 20 12.2 20C7.68 20 4 16.32 4 11.8a8.15 8.15 0 0 1 4.18-7.15" />
+     </svg>
+    </div> 
+   </div>
+    <div id="header_actions-notif-div" class="header_actions-div" title="Notifications">
+     <svg width="25px" height="25px" viewBox="0 0 24 24">
+      <path class="svg" fill-rule="evenodd" d="M12 1.25A7.75 7.75 0 0 0 4.25 9v.704a3.53 3.53 0 0 1-.593 1.958L2.51 13.385c-1.334 2-.316 4.718 2.003 5.35q1.133.309 2.284.523l.002.005C7.567 21.315 9.622 22.75 12 22.75s4.433-1.435 5.202-3.487l.002-.005a29 29 0 0 0 2.284-.523c2.319-.632 3.337-3.35 2.003-5.35l-1.148-1.723a3.53 3.53 0 0 1-.593-1.958V9A7.75 7.75 0 0 0 12 1.25m3.376 18.287a28.5 28.5 0 0 1-6.753 0c.711 1.021 1.948 1.713 3.377 1.713s2.665-.692 3.376-1.713M5.75 9a6.25 6.25 0 1 1 12.5 0v.704c0 .993.294 1.964.845 2.79l1.148 1.723a2.02 2.02 0 0 1-1.15 3.071a26.96 26.96 0 0 1-14.187 0a2.02 2.02 0 0 1-1.15-3.07l1.15-1.724a5.03 5.03 0 0 0 .844-2.79z" clip-rule="evenodd" />
+     </svg>
+    </div>
+     <div id="header_actions-acc-div" class="header_actions-div" title="Accoount">
+     <svg width="25px" height="25px" viewBox="0 0 24 24">
+      <path class="svg" d="M10 4a4 4 0 0 0-4 4a4 4 0 0 0 4 4a4 4 0 0 0 4-4a4 4 0 0 0-4-4m7 8a.26.26 0 0 0-.26.21l-.19 1.32c-.3.13-.59.29-.85.47l-1.24-.5c-.11 0-.24 0-.31.13l-1 1.73c-.06.11-.04.24.06.32l1.06.82a4.2 4.2 0 0 0 0 1l-1.06.82a.26.26 0 0 0-.06.32l1 1.73c.06.13.19.13.31.13l1.24-.5c.26.18.54.35.85.47l.19 1.32c.02.12.12.21.26.21h2c.11 0 .22-.09.24-.21l.19-1.32c.3-.13.57-.29.84-.47l1.23.5c.13 0 .26 0 .33-.13l1-1.73a.26.26 0 0 0-.06-.32l-1.07-.82c.02-.17.04-.33.04-.5s-.01-.33-.04-.5l1.06-.82a.26.26 0 0 0 .06-.32l-1-1.73c-.06-.13-.19-.13-.32-.13l-1.23.5c-.27-.18-.54-.35-.85-.47l-.19-1.32A.236.236 0 0 0 19 12zm-7 2c-4.42 0-8 1.79-8 4v2h9.68a7 7 0 0 1-.68-3a7 7 0 0 1 .64-2.91c-.53-.06-1.08-.09-1.64-.09m8 1.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5c-.84 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5" />
+     </svg>
+    </div>
+    <div class="header_actions-lang-div">
+     <div id="lang-en-btn" class="header_actions-lang-en" title="Languages BETA VERSION">
+      <svg width="25px" height="25px" viewBox="0 0 36 36">
+       <path fill="#00247d" d="M0 9.059V13h5.628zM4.664 31H13v-5.837zM23 25.164V31h8.335zM0 23v3.941L5.63 23zM31.337 5H23v5.837zM36 26.942V23h-5.631zM36 13V9.059L30.371 13zM13 5H4.664L13 10.837z" />
+       <path fill="#cf1b2b" d="m25.14 23l9.712 6.801a4 4 0 0 0 .99-1.749L28.627 23zM13 23h-2.141l-9.711 6.8c.521.53 1.189.909 1.938 1.085L13 23.943zm10-10h2.141l9.711-6.8a4 4 0 0 0-1.937-1.085L23 12.057zm-12.141 0L1.148 6.2a4 4 0 0 0-.991 1.749L7.372 13z" />
+       <path fill="#eee" d="M36 21H21v10h2v-5.836L31.335 31H32a4 4 0 0 0 2.852-1.199L25.14 23h3.487l7.215 5.052c.093-.337.158-.686.158-1.052v-.058L30.369 23H36zM0 21v2h5.63L0 26.941V27c0 1.091.439 2.078 1.148 2.8l9.711-6.8H13v.943l-9.914 6.941c.294.07.598.116.914.116h.664L13 25.163V31h2V21zM36 9a3.98 3.98 0 0 0-1.148-2.8L25.141 13H23v-.943l9.915-6.942A4 4 0 0 0 32 5h-.663L23 10.837V5h-2v10h15v-2h-5.629L36 9.059zM13 5v5.837L4.664 5H4a4 4 0 0 0-2.852 1.2l9.711 6.8H7.372L.157 7.949A4 4 0 0 0 0 9v.059L5.628 13H0v2h15V5z" />
+       <path fill="#cf1b2b" d="M21 15V5h-6v10H0v6h15v10h6V21h15v-6z" />
+     </svg>
+    </div>
+    <div id="lang-ru-btn" class="header_actions-lang-ru">
+     <svg width="25px" height="25px" viewBox="0 0 36 36">
+      <path fill="#ce2028" d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-4h36z" />
+      <path fill="#22408c" d="M0 13h36v10H0z" />
+      <path fill="#eee" d="M32 5H4a4 4 0 0 0-4 4v4h36V9a4 4 0 0 0-4-4" />
+     </svg>
+    </div>
+    <div id="lang-hy-btn" class="header_actions-lang-hy">
+     <svg width="25px" height="25px" viewBox="0 0 36 36">
+      <path fill="#d90012" d="M32 5H4a4 4 0 0 0-4 4v4h36V9a4 4 0 0 0-4-4" />
+      <path fill="#f2a800" d="M4 31h28a4 4 0 0 0 4-4v-4H0v4a4 4 0 0 0 4 4" />
+      <path fill="#0033a0" d="M0 13h36v10H0z" />
+     </svg>
+    </div>
+   </div>
+   </div>
+  </header>
+
+
+  <main id="main">
+   <div class="main-left-video-div">
+   <div class="video-player">
+    <video class="video" src="https://hls.armdb.org/file/armdb-hls/videos/39238/f.m3u8" controls></video>
+   </div>
+   <div class="video-info-div">
+    <div class="video-title">Harry Potter and the Goblet of Fire (2005)</div>
+    <div class="video-info">
+     <ul class="video-ul">
+      <li>
+       <small>Director:</small>
+       <span class="video-span">Mike Newell</span>
+      </li>
+      <li>
+       <small>Actors:</small>
+       <span class="video-span"> Daniel Radcliffe, Rupert Grint, Emma Watson, Robbie Coltrane, Ralph Fiennes, Michael Gambon, Robert Pattinson</span>
+      </li>
+      <li>
+       <small>Year | Country:</small>
+       <span class="video-span">2005 | United Kingdom, USA</span>
+      </li>
+      <li>
+       <small>Duration:</small>
+       <span class="video-span">2:17:28</span>
+      </li>
+     </ul>
+    </div>
+    <div class="video-desc">
+    <h2>Description:</h2>
+    <span class="description">Harry Potter faces an unexpectedly dangerous fourth year at Hogwarts School of Witchcraft and Wizardry. Contrary to the rules, the mysterious Goblet of Fire selects Harry as the fourth participant in the legendary Triwizard Tournament—an ancient and deadly competition between the three most powerful magical schools. Now, the precocious young wizard must face three daunting trials! Harry will have to reclaim a golden egg from a furious dragon, rescue his friends from the depths of a dark lake infested with mermaids, and navigate a living, terrifying labyrinth. But the most terrifying challenge awaits him: the Tournament turns out to be a trap, and in an abandoned graveyard, Harry will come face to face with the Dark Lord Voldemort, who has regained his body, in an epic wand duel!</span>
+    </div>
+   </div>
+  </div>
+  </main>
+
+
+
+<footer class="footer">
+ <div class="ftr-logo-div">
+  <a href="../main.html" draggable="false">
+   <img class="header_logo" src="../andfilm_logo.png" alt="logo" draggable="false">
+  </a>
+ </div>
+ <div class="ftr-socials-div">
+  <a href="https://www.instagram.com" target="_blank">
+   <div class="ftr-social">
+    <svg width="25px" height="25px" viewBox="0 0 24 24">
+     <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+    </svg>
+   </div>
+  </a>
+  <a href="https://www.facebook.com" target="_blank">
+   <div class="ftr-social">
+    <svg width="25px" height="25px" viewBox="0 0 24 24">
+     <path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+    </svg>
+   </div>
+  </a>
+  <a href="https://www.linkedin.com" target="_blank">
+   <div class="ftr-social">
+    <svg width="25px" height="25px" viewBox="0 0 24 24">
+     <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
+    </svg>
+   </div>
+  </a>
+  <a href="https://web.telegram.org" target="_blank">
+   <div class="ftr-social">
+    <svg width="25px" height="25px" viewBox="0 0 24 24">
+     <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19c-.14.75-.42 1-.68 1.03c-.58.05-1.02-.38-1.58-.75c-.88-.58-1.38-.94-2.23-1.5c-.99-.65-.35-1.01.22-1.59c.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02c-.09.02-1.49.95-4.22 2.79c-.4.27-.76.41-1.08.4c-.36-.01-1.04-.2-1.55-.37c-.63-.2-1.12-.31-1.08-.66c.02-.18.27-.36.74-.55c2.92-1.27 4.86-2.11 5.83-2.51c2.78-1.16 3.35-1.36 3.73-1.36c.08 0 .27.02.39.12c.1.08.13.19.14.27c-.01.06.01.24 0 .38" />
+    </svg>
+   </div>
+  </a>
+ </div>
+ <div class="ftr-nav">
+ <ul class="ftr_nav-ul">
+  <li>
+  <a class="nav-links" href="../main.html">Films</a>
+  </li>
+  <li>
+   <a class="nav-links" href="../main.html">Series</a>
+  </li>
+  <li>
+   <a class="nav-links" href="../main.html">Cartoons</a>
+  </li>
+  <li>
+   <a class="nav-links" href="#">New</a>
+  </li>
+ </ul>
+
+  <ul class="ftr_nav-ul">
+  <li>
+  <a class="nav-links" href="../about-the-project/about-the-project.html">About the project</a>
+  </li>
+  <li>
+   <a class="nav-links" href="../contacts/contacts.html">Contacts</a>
+  </li>
+  <li>
+   <a class="nav-links" href="../faq/faq.html">FAQ</a>
+  </li>
+  <li>
+   <a class="nav-links" href="../support/support.html">Support</a>
+  </li>
+ </ul>
+
+   <ul class="ftr_nav-ul">
+  <li>
+  <a class="nav-links" href="../privacy-policy/privacy-policy.html">Privacy Policy</a>
+  </li>
+  <li>
+   <a class="nav-links" href="../terms-of-service/terms-of-service.html">Terms of Service</a>
+  </li>
+ </ul>
+
+
+
+ </div>
+ <div class="ftr-sponsors">
+  <a href="https://www.netflix.com" target="_blank">
+   <svg id="ftr-netflix-svg" class="ftr-sponsors-svg" width="80px" height="80px" viewBox="0 0 512 138">
+    <path d="M340.657 0v100.203q18.54.861 36.98 2.09v21.245a1822 1822 0 0 0-58.542-2.959V0zM512 .012l-28.077 65.094l28.07 72.438l-.031.013a1789 1789 0 0 0-24.576-3.323l-15.763-40.656l-15.913 36.882a1816 1816 0 0 0-22.662-2.36l27.371-63.43L435.352.013h23.325l14.035 36.184L488.318.012zM245.093 119.526V.011h60.19v21.436h-38.628v27.78h29.227v21.245h-29.227v49.05zM164.58 21.448V.01h66.69v21.437h-22.565v98.66c-7.197.19-14.386.412-21.56.683V21.448zM90.868 126.966V.014h59.89v21.435h-38.331v29.036c8.806-.113 21.327-.24 29.117-.222V71.51c-9.751-.12-20.758.134-29.117.217v32.164a1848 1848 0 0 1 38.331-2.62v21.247a1816 1816 0 0 0-59.89 4.45M48.571 77.854L48.57.01h21.562v128.96q-11.823 1.216-23.603 2.584L21.56 59.824v74.802q-10.8 1.406-21.56 2.936V.012h20.491zm346.854 46.965V.012h21.563V126.6c-7.179-.64-14.364-1.23-21.563-1.78" />
+   </svg>
+  </a>
+  <a href="https://www.youtube.com" target="_blank">
+   <svg id="ftr-youtube-svg" class="ftr-sponsors-svg" width="40px" height="40px" viewBox="0 0 24 24">
+    <path d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
+   </svg>
+  </a>
+  <a href="https://play.google.com/" target="_blank">
+   <svg class="ftr-sponsors-svg ftr-svg" width="35px" height="35px" viewBox="0 0 24 24">
+    <path d="m22.018 13.298l-3.919 2.218l-3.515-3.493l3.543-3.521l3.891 2.202a1.49 1.49 0 0 1 0 2.594M1.337.924a1.5 1.5 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087zm12.207 10.065l3.258-3.238L3.45.195a1.47 1.47 0 0 0-.946-.179zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54z" />
+   </svg>
+  </a>
+  <a href="https://www.rockstargames.com/" target="_blank">
+   <svg class="ftr-sponsors-svg ftr-svg" width="35px" height="35px" viewBox="0 0 24 24">
+    <path d="M5.971 6.816h3.241c1.469 0 2.741-.448 2.741-2.084c0-1.3-1.117-1.576-2.19-1.576H6.748zm12.834 8.753h5.168l-4.664 3.228l.755 5.087l-4.041-3.07L10.599 24l2.536-5.392s-2.95-3.075-2.947-3.075c-.198-.262-.265-.936-.265-1.226c0-.367.024-.739.049-1.134c.028-.451.058-.933.058-1.476c0-1.338-.59-2.038-2.036-2.038H5.283l-1.18 5.525H.026L3.269 0h7.672c2.852 0 5.027.702 5.027 3.936c0 2.276-1.12 3.894-3.592 4.233v.045c1.162.276 1.598 1.062 1.598 2.527c0 .585-.018 1.098-.034 1.581c-.015.428-.03.834-.03 1.243c0 .525.137 1.382.48 1.968h.567l3.028-5.06zm-1.233-2.948l-2.187 3.654h-3.457l2.103 2.189l-1.73 3.672l3.777-2.218l2.976 2.263l-.553-3.731l3.093-2.139h-3.43z" />
+   </svg>
+  </a>
+  <a href="https://www.imdb.com/" target="_blank">
+   <svg class="ftr-sponsors-svg ftr-svg" width="35px" height="35px" viewBox="0 0 24 24">
+    <path d="M20.645 2H3.355c-.742.032-1.323.645-1.387 1.323v17.322c.064.71.613 1.258 1.322 1.355h17.42c.742-.032 1.322-.677 1.322-1.42V3.42c-.064-.743-.645-1.388-1.387-1.42m.936 18.58a.99.99 0 0 1-.904 1H3.29a.96.96 0 0 1-.903-.967V3.355c.032-.516.452-.903.968-.968h17.258c.548.032.968.452.968 1z" />
+    <path d="M5.968 8.87h-1.58V15h1.58zm3 2.904l-.226-1.58c-.032-.484-.129-.968-.193-1.323H6.517V15H7.87v-4.032L8.453 15h1l.549-4.13V15h1.354V8.87H9.26zm6.29-2.419c-.129-.194-.355-.258-.645-.355c-.258-.032-.742-.097-1.452-.097h-1.193v6.13h1.903c.484 0 1.161.064 1.452-.42c.129-.194.16-.452.193-.71c.032-.226.032-.451.032-.71v-2.128c0-.581 0-.968-.032-1.194c-.032-.193-.129-.355-.258-.516m-1.129 3.742c0 .42-.097.645-.129.742s-.194.129-.42.129V9.903c.194 0 .259 0 .355.033a.5.5 0 0 1 .13.193c.032.097.032.258.032.549v2.419zm5.388-2.291c-.065-.129-.162-.193-.323-.258a1.6 1.6 0 0 0-.87-.064c-.13.032-.259.064-.388.129c-.064.032-.129.064-.194.129c-.032.032-.16.097-.16.129v-2h-1.55V15h1.452l.097-.42c.13.13.258.259.42.355c.129.097.322.097.483.097c.162 0 .355-.032.516-.097a1.08 1.08 0 0 0 .613-.903c.033-.548.033-1.097.033-1.677v-1.13a1.6 1.6 0 0 0-.13-.419m-1.355 2.742c0 .258 0 .484-.032.549c-.033.097-.13.129-.258.129c-.097 0-.13-.033-.194-.097c-.032-.097-.032-.226-.032-.484V12c0-.258 0-.452.032-.484s.097-.097.194-.097c.096 0 .225.032.258.13c.032.096.032.225.032.483z" />
+   </svg>
+ </a>
+ </div>
+  <a href="#top">
+  <div class="ftr-go-top" title="GO TOP">
+   <svg width="30px" height="30px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12.71 6.29a1 1 0 0 0-.33-.21a1 1 0 0 0-.76 0a1 1 0 0 0-.33.21l-4 4a1 1 0 1 0 1.42 1.42L11 9.41V21a1 1 0 0 0 2 0V9.41l2.29 2.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM19 2H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2" />
+   </svg>
+  </div>
+ </a>
+ <div class="ftr-last-name">ANDFILM</div>
+ <div class="copyright">© 2026 AndFilm. All rights reserved.</div>
+</footer>
+ </div>
+
+ <script src="../main.js"></script>
+</body>
+</html>
